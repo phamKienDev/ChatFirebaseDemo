@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UserFragment">
+
+    <EditText
+        android:id="@+id/search_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="Search"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/button_selectorcolor"
+        android:textColorHint="@color/button_selectorcolor"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/white_greyish"
+        android:layout_below="@id/search_view"/>
+
+    <GridView
+        android:id="@+id/gridview_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_view"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+
+        ></GridView>
+
+
+</RelativeLayout>
